@@ -6,10 +6,6 @@ import Link from "next/link";
 import Sidebar from "@/components/wishlist/sidebar";
 import WishlistBanner from "@/components/wishlist/WishlistBanner";
 
-
-
-
-
 const WishList = () => {
   return (
     <div>
