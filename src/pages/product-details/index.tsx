@@ -18,7 +18,7 @@ import {
 } from "react-icons/fa";
 import ProductDetailsBanner from "@/components/ProductDetailsPage/ProductDetailsBanner";
 import ProductDetailsSidebar from "@/components/ProductDetailsPage/ProductDetailsSidebar";
-// import ProductDetailsBanner from "@/components/ProductDetailsPage/ProductDetailsbanner";
+
 
 interface Tab {
     id: number;
