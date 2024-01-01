@@ -6,7 +6,8 @@ const ShoppingCart = () => {
     return (
         <div>
             <ShoppingCartBanner/>
-            <ShoppingCartList/>
+            <ShoppingCartList/> 
+            
             
         </div>
     );
