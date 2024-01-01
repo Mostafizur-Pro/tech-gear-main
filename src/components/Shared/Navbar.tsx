@@ -129,9 +129,9 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Home", href: "/home" },
-    { name: "contact", href: "/contact" },
-    { name: "Stores", href: "#" },
+    // { name: "Home", href: "/" },
+    { name: "Contact", href: "/contact" },
+    { name: "Product Details", href: "/product-details" },
     { name: "Shopping Cart", href: "/shopping-cart" },
     { name: "Wishlist", href: "/wishlist" },
     // { name: "About US", href: "/about" },
