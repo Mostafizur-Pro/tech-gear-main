@@ -16,7 +16,8 @@ import {
     FaPlus,
     FaTwitter,
 } from "react-icons/fa";
-import ProductDetailsBanner from "@/components/ProductDetailsPage/ProductDetailsbanner";
+import ProductDetailsBanner from "@/components/ProductDetailsPage/ProductDetailsBanner";
+// import ProductDetailsBanner from "@/components/ProductDetailsPage/ProductDetailsbanner";
 
 interface Tab {
     id: number;
