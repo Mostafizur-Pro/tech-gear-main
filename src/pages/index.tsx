@@ -1,10 +1,9 @@
-import Navbar from "@/components/Shared/Navbar";
+import Sidebar from "@/components/HomePage/Sliderbar";
 
 const Home = () => {
   return (
-    <div>
-      
-      Home Page
+    <div>      
+      <Sidebar/>
     </div>
   );
 };
