@@ -134,7 +134,7 @@ const navigation = {
     { name: "Product Details", href: "/product-details" },
     { name: "Shopping Cart", href: "/shopping-cart" },
     { name: "Wishlist", href: "/wishlist" },
-    // { name: "About US", href: "/about" },
+    { name: "About US", href: "/about" },
     { name: "Dashboard", href: "/dashboard" },
   ],
 };
