@@ -136,6 +136,7 @@ const navigation = {
     { name: "Wishlist", href: "/wishlist" },
     { name: "About US", href: "/about" },
     { name: "Dashboard", href: "/dashboard" },
+    { name: "Faq", href: "/faq" },
   ],
 };
 
