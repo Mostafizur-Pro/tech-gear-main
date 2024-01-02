@@ -11,7 +11,7 @@ const Faq = () => {
                 {/* General Questions */}
                 <div className="join join-vertical w-full ">
                     <div>
-                        <h1 className='text-center py-12 text-gray-700 font-medium text-2xl'>
+                        <h1 className='text-center py-12 text-rose-500 font-medium text-3xl'>
                             General Questions
                         </h1>
                     </div>
@@ -20,7 +20,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             Do you have any built-in caching?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             How do I upload files from my phone or tablet?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             Do you have any built-in caching?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             What are popular free webpage builders?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             Do you have any built-in caching?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             How can I start my design?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Faq = () => {
                 {/* Other Question */}
                 <div className="join join-vertical w-full">
                     <div>
-                        <h1 className='text-center py-12 text-gray-700 font-medium text-2xl'>
+                        <h1 className='text-center py-12 text-rose-500 font-medium text-3xl'>
                             Other Questions
                         </h1>
                     </div>
@@ -82,7 +82,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             Do you have any built-in caching?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             How do I upload files from my phone or tablet?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content   whitespace-normal text-wrap	text-lg text-gray-500 ">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             Do you have any built-in caching?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             What are popular free webpage builders?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content    whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             Do you have any built-in caching?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content  whitespace-normal text-wrap	text-lg text-gray-500  ">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ const Faq = () => {
                         <div className="collapse-title text-xl font-medium">
                             How can I start my design?
                         </div>
-                        <div className="collapse-content  ">
+                        <div className="collapse-content  whitespace-normal text-wrap	text-lg text-gray-500">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                         </div>
                     </div>
