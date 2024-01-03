@@ -137,6 +137,7 @@ const navigation = {
     { name: "About US", href: "/about" },
     { name: "Dashboard", href: "/dashboard" },
     { name: "Blog", href: "/blog" },
+    { name: "Faq", href: "/faq" },
 
   ],
 };
