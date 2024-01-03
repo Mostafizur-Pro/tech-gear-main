@@ -28,7 +28,7 @@ const AddImages = () => {
       setSelectedImages((prevImages) => [...prevImages, ...imagesArray]);
   
     };
-    console.log(selectedImages);
+    // console.log(selectedImages);
   return (
     <>
       <button

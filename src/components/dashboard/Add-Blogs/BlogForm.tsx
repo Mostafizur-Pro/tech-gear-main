@@ -18,10 +18,16 @@ const BlogForm = () => {
         description.id === id ? { ...description, value } : description
       )
     );
-    console.log(descriptions);
+    // console.log(descriptions);
   };
+
+  //   handleFormchange here
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label className="text-sm text-gray-500">
         Title
         <input
@@ -39,6 +45,16 @@ const BlogForm = () => {
         descriptions={descriptions}
       />
       <AddImages />
+
+      <hr />
+
+      <button
+        type="submit"
+        className="py-3 mt-4 px-6 font-bold rounded-lg w-fit 
+            bg-rose-500 hover:bg-rose-400  duration-300 text-white"
+      >
+        Submit
+      </button>
     </form>
   );
 };
