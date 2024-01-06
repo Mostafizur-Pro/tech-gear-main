@@ -13,8 +13,8 @@ const bodoniModa = Bodoni_Moda({
 
 const Sidebar = () => {
     return (
-        <section>
-            <div className="container mx-auto px-6">
+        <section className="border-b">
+            <div className="container mx-auto px-6 ">
                 <div className="grid md:grid-cols-7 items-end lg:pt-44 md:pt-20 pt-16">
                     <div className="col-span-3 ">
                         <h2
