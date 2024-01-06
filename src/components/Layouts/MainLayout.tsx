@@ -9,7 +9,7 @@ type MainLayoutProps = {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     return (
         <div>
-            {/* <Navbar /> */}
+            <Navbar />
             <div>{children}</div>
             <Footer />
         </div>

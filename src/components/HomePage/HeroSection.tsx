@@ -75,7 +75,6 @@ const HeroSection = () => {
             image: productImage07,
             category: "Unisex",
         },
-        // Add more clothing products as needed
     ];
 
     return (
@@ -105,7 +104,7 @@ const HeroSection = () => {
             <div className="">
                 <Marquee pauseOnHover={true}>
                     {products.map((product) => (
-                        <div className="ps-0.5" key={product.id}>
+                        <div className="ps-0.5 " key={product.id}>
                             <Image
                                 className="md:h-auto h-80 w-auto"
                                 src={product.image}
