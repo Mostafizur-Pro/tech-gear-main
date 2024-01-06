@@ -1,11 +1,11 @@
 import Collection from "@/components/HomePage/Collection";
-import Sidebar from "@/components/HomePage/Sliderbar";
+import HeroSection from "@/components/HomePage/HeroSection";
 import Product from "@/components/Product/Product";
 
 const Home = () => {
     return (
         <div>
-            <Sidebar />
+            <HeroSection />
             <Collection />
             <Product></Product>
         </div>
