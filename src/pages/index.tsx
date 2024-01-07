@@ -1,5 +1,6 @@
 import Collection from "@/components/HomePage/Collection";
 import HeroSection from "@/components/HomePage/HeroSection";
+import Newsletter from "@/components/HomePage/Newsletter";
 import Product from "@/components/Product/Product";
 
 const Home = () => {
@@ -7,7 +8,8 @@ const Home = () => {
         <div>
             <HeroSection />
             <Collection />
-            <Product></Product>
+            <Newsletter />
+            <Product />
         </div>
     );
 };
