@@ -55,7 +55,7 @@ const NewArrival: React.FC = () => {
     ];
     return (
         <section className="container mx-auto px-6 py-16">
-            <div className="flex justify-between items-center">
+            <div className="md:flex justify-between items-center">
                 <h2
                     className={`uppercase lg:text-3xl text-xl ${bodoniModa.className} py-6`}
                 >
@@ -64,7 +64,7 @@ const NewArrival: React.FC = () => {
                 <div className="w-40 h-0.5 bg-black border"></div>
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
                 {products.map((product) => (
                     <div
                         key={product.id}
