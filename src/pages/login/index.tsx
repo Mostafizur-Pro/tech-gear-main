@@ -29,7 +29,7 @@ const Login = () => {
             .then((res) => res.json())
             .then((result) => {
                 setLoginLoading(false);
-                console.log(result);
+                console.log('login',result);
                 if (result.success) {
                     router.push("/");
                 }
