@@ -7,12 +7,15 @@ import productImage03 from "@/assets/newArrival/3.jpg";
 import productSecondImage03 from "@/assets/newArrival/3_2.jpg";
 import productImage04 from "@/assets/newArrival/4.jpg";
 import productSecondImage04 from "@/assets/newArrival/4_2.jpg";
-import productImage05 from "@/assets/newArrival/5.jpg";
-import productSecondImage05 from "@/assets/newArrival/5_2.jpg";
-import productImage06 from "@/assets/newArrival/6.jpg";
-import productSecondImage06 from "@/assets/newArrival/6_2.jpg";
 import Image from "next/image";
 
+// Import Open Sans font
+import { Bodoni_Moda } from "next/font/google";
+// Configure font object
+const bodoniModa = Bodoni_Moda({
+    subsets: ["latin"],
+    display: "swap",
+});
 const NewArrival: React.FC = () => {
     const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
 
@@ -52,7 +55,15 @@ const NewArrival: React.FC = () => {
     ];
     return (
         <section className="container mx-auto px-6 py-16">
-            <h2 className="py-6 text-3xl font-semibold">New Arrival</h2>
+            <div className="flex justify-between items-center">
+                <h2
+                    className={`uppercase lg:text-3xl text-xl ${bodoniModa.className} py-6`}
+                >
+                    New Arrival
+                </h2>
+                <div className="w-40 h-0.5 bg-black border"></div>
+            </div>
+
             <div className="grid grid-cols-4 gap-4">
                 {products.map((product) => (
                     <div
@@ -69,14 +80,13 @@ const NewArrival: React.FC = () => {
                             alt={product.name}
                             className="w-full h-96 object-cover"
                         />
-                        <h3 className="text-xl font-semibold mt-2">
-                            {product.name}
-                        </h3>
-                        <p className="text-gray-600">{product.description}</p>
-                        <p className="text-green-500 font-semibold mt-2">
-                            ${product.price}
-                        </p>
-                        {/* Add more details or buttons as needed */}
+                        <div className="flex justify-between items-center">
+                            <h3
+                                className={`uppercase text-xl ${bodoniModa.className}`}
+                            >
+                                {product.name}
+                            </h3>
+                        </div>
                     </div>
                 ))}
             </div>
