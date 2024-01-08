@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             <p className="">Providing reliable tech since 2023</p>
           </div>
         </aside>
-        <nav className="hidden md:block">
+        <nav className="">
           <h4 className="text-xl uppercase font-bold text-gray-400 pb-3">
             Services
           </h4>

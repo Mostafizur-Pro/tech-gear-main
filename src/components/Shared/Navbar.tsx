@@ -195,7 +195,6 @@ const navigation = {
     { name: "Dashboard", href: "/dashboard" },
     // { name: "Blog", href: "/blog" },
     // { name: "Faq", href: "/faq" },
-
   ],
 };
 
@@ -395,7 +394,11 @@ export default function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <a href="#">
                   <span className="sr-only">Your Company</span>
-                  <img className="h-8 w-auto" src="https://pbs.twimg.com/media/FVs3VPLWIAATXow.jpg:large" alt="Logo" />
+                  <img
+                    className="h-8 w-auto"
+                    src="https://pbs.twimg.com/media/FVs3VPLWIAATXow.jpg:large"
+                    alt="Logo"
+                  />
                 </a>
               </div>
 
