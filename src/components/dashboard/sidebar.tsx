@@ -14,7 +14,7 @@ const DashboardSidebar = () => {
             <a href="#">Password Recovery</a>
           </li>
           <li className="px-[15px] py-[10px] font-medium text-gray-500 text-[16px]">
-            <a href="#">My Account</a>
+            <a href="/dashboard/account">My Account</a>
           </li>
           <li className="px-[15px] py-[10px] font-medium text-gray-500 text-[16px]">
             <a href="#">Address Book</a>
