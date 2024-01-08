@@ -3,7 +3,6 @@ import Image from "next/image";
 
 // Import Open Sans font
 import { Bodoni_Moda } from "next/font/google";
-import Marquee from "react-fast-marquee";
 // Configure font object
 const bodoniModa = Bodoni_Moda({
     subsets: ["latin"],
@@ -12,8 +11,8 @@ const bodoniModa = Bodoni_Moda({
 
 const Newsletter = () => {
     return (
-        <section className="container mx-auto px-6 border my-16 py-6">
-            <div className=" grid md:grid-cols-6 md:justify-between justify-center items-center 2xl:gap-32 xl:gap-28 lg:gap-16">
+        <section className="container mx-auto px-6  my-16 py-6">
+            <div className="border 2xl:p-6 grid md:grid-cols-6 md:justify-between justify-center items-center 2xl:gap-32 xl:gap-28 lg:gap-16">
                 <div className="col-span-4 md:p-10 p-4">
                     <h2
                         className={`xl:text-6xl lg:text-4xl text-3xl font-bold ${bodoniModa.className}`}
