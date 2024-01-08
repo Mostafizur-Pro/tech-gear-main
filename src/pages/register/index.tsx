@@ -61,7 +61,7 @@ const Register = () => {
                     .then((res) => res.json())
                     .then((result) => {
                         setCreateUserLoading(false);
-                        console.log(result);
+                        console.log('register',result);
                     })
                     .catch((err) => {
                         console.log(err);

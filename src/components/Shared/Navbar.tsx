@@ -127,15 +127,74 @@ const navigation = {
         },
       ],
     },
+    {
+      id: "page",
+      name: "Page",
+      featured: [
+        {
+          name: "New Arrivals",
+          href: "#",
+          imageSrc: " ",
+          imageAlt:
+            "Drawstring top with elastic loop closure and textured interior padding.",
+        },
+        {
+          name: "Artwork Tees",
+          href: "#",
+          imageSrc: " ",
+          imageAlt:
+            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+        },
+      ],
+      sections: [
+        {
+          id: "section",
+          name: "Section",
+          items: [
+            { name: "Contact", href: "/contact" },
+            { name: "About Us", href: "/about" },
+            { name: "FAQ", href: "/faq" },
+            { name: "Blog", href: "/blog" },
+            // { name: "Jackets", href: "#" },
+            // { name: "Activewear", href: "#" },
+            // { name: "Browse All", href: "#" },
+          ],
+        },
+        {
+          id: "accessories",
+          name: "Accessories",
+          items: [
+            { name: "Watches", href: "#" },
+            { name: "Wallets", href: "#" },
+            { name: "Bags", href: "#" },
+            { name: "Sunglasses", href: "#" },
+            { name: "Hats", href: "#" },
+            { name: "Belts", href: "#" },
+          ],
+        },
+        {
+          id: "brands",
+          name: "Brands",
+          items: [
+            { name: "Re-Arranged", href: "#" },
+            { name: "Counterfeit", href: "#" },
+            { name: "Full Nelson", href: "#" },
+            { name: "My Way", href: "#" },
+          ],
+        },
+      ],
+    },
   ],
   pages: [
     // { name: "Home", href: "/" },
-    { name: "Contact", href: "/contact" },
+    // { name: "Contact", href: "/contact" },
     { name: "Product Details", href: "/product-details" },
     { name: "Shopping Cart", href: "/shopping-cart" },
-    { name: "Wishlist", href: "/wishlist" },
-    { name: "About US", href: "/about" },
+    // { name: "Wishlist", href: "/wishlist" },
+    // { name: "About US", href: "/about" },
     { name: "Dashboard", href: "/dashboard" },
+    // { name: "Blog", href: "/blog" },
+    // { name: "Faq", href: "/faq" },
   ],
 };
 
@@ -190,7 +249,7 @@ export default function Navbar() {
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
-                    <Tab.List className="-mb-px flex space-x-4 px-4">
+                    <Tab.List className="-mb-px flex flex-wrap space-x-4 px-4">
                       {navigation.categories.map((category) => (
                         <Tab
                           key={category.name}
@@ -335,13 +394,17 @@ export default function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <a href="#">
                   <span className="sr-only">Your Company</span>
-                  <img className="h-8 w-auto" src="https://pbs.twimg.com/media/FVs3VPLWIAATXow.jpg:large" alt="Logo" />
+                  <img
+                    className="h-8 w-auto"
+                    src="https://pbs.twimg.com/media/FVs3VPLWIAATXow.jpg:large"
+                    alt="Logo"
+                  />
                 </a>
               </div>
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
-                <div className="flex h-full space-x-8">
+                <div className="flex h-full flex-wrap space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       {({ open }) => (
