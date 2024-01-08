@@ -3,7 +3,7 @@ import AboutBanner from "@/components/AboutPage/AboutBanner";
 
 const About = () => {
   return (
-   <div>
+   <div className="container mx-auto">
     <AboutBanner/>
     <AboutPage/>
    </div>
