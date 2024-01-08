@@ -80,12 +80,17 @@ const NewArrival: React.FC = () => {
                             alt={product.name}
                             className="w-full h-96 object-cover"
                         />
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center py-1">
                             <h3
                                 className={`uppercase text-xl ${bodoniModa.className}`}
                             >
                                 {product.name}
                             </h3>
+                            <p
+                                className={`uppercase text-xl text-green-600 ${bodoniModa.className}`}
+                            >
+                                ${product.price}
+                            </p>
                         </div>
                     </div>
                 ))}
