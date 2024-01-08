@@ -2,33 +2,17 @@ import React, { useState, ChangeEvent } from "react";
 import { MdOutlineAddPhotoAlternate } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 
-const AddImages = () => {
-    const [selectedImages, setSelectedImages] = useState<string[]>([]);
+interface AddImagesProps {
+  selectedImages: string[];
+  onSelectFile: (e: ChangeEvent<HTMLInputElement>) => void;
+  setSelectedImages: React.Dispatch<React.SetStateAction<string[]>>;
+}
 
-    const onSelectFile = (e: ChangeEvent<HTMLInputElement>) => {
-      const selectedFiles = e.target.files;
-      const imagesLimit = 3;
-      
-      if (!selectedFiles) {
-        return;
-      }
-  
-      const selectedFilesArray = Array.from(selectedFiles);
-  
-      // Add image hosting
-      const imagesArray = selectedFilesArray.map((file) => {
-        return URL.createObjectURL(file);
-      });
-  
-      if (selectedImages.length + imagesArray.length > imagesLimit) {
-        console.log('You Cannot add more then 3 images');
-        return;
-      }
-  
-      setSelectedImages((prevImages) => [...prevImages, ...imagesArray]);
-  
-    };
-    // console.log(selectedImages);
+const AddImages: React.FC<AddImagesProps> = ({
+  selectedImages,
+  onSelectFile,
+  setSelectedImages,
+}) => {
   return (
     <>
       <button
