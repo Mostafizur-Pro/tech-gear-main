@@ -28,5 +28,11 @@
         "name": "Sophie Miller",
         "avatar": "https://t4.ftcdn.net/jpg/05/60/46/57/360_F_560465710_VpBpJLv0yCT2GmDH8AFlJwoddYWtTeDG.jpg",
         "content": "I recommend this site to all my friends. The fashion trends are always up-to-date, and the sales are amazing!"
+    },
+    {
+        "id": 6,
+        "name": "Klice Johnson",
+        "avatar": "https://i.pinimg.com/736x/25/47/c7/2547c7ecb55605fbb39e04157f157021.jpg",
+        "content": "I love shopping from your site! The products are of great quality, and the customer service is exceptional."
     }
 ]
