@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "avatar": "https://i.pinimg.com/736x/25/47/c7/2547c7ecb55605fbb39e04157f157021.jpg",
+        "content": "I love shopping from your site! The products are of great quality, and the customer service is exceptional."
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "avatar": "https://ph-files.imgix.net/75c2cda9-e2c3-4bcd-a0b1-0595daba1844.png?auto=format&fit=crop",
+        "content": "The shopping experience here is fantastic. I always find what I need, and the delivery is fast and reliable."
+    },
+    {
+        "id": 3,
+        "name": "Eva Davis",
+        "avatar": "https://i.pinimg.com/1200x/04/4a/78/044a78f85cfd05892a4381f0d7d0a477.jpg",
+        "content": "The variety of products is impressive. I appreciate the attention to detail and the user-friendly website."
+    },
+    {
+        "id": 4,
+        "name": "John Williams",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NDTYYDTAUgXVp-OZXnVOsfunOioMCt1RNC05ZTqDAExDiS81cY7jOM6hRjvGjekjIjQ&usqp=CAU",
+        "content": "I've been a loyal customer for years. The clothing quality is top-notch, and the prices are reasonable."
+    },
+    {
+        "id": 5,
+        "name": "Sophie Miller",
+        "avatar": "https://t4.ftcdn.net/jpg/05/60/46/57/360_F_560465710_VpBpJLv0yCT2GmDH8AFlJwoddYWtTeDG.jpg",
+        "content": "I recommend this site to all my friends. The fashion trends are always up-to-date, and the sales are amazing!"
+    },
+    {
+        "id": 6,
+        "name": "Klice Johnson",
+        "avatar": "https://i.pinimg.com/736x/25/47/c7/2547c7ecb55605fbb39e04157f157021.jpg",
+        "content": "I love shopping from your site! The products are of great quality, and the customer service is exceptional."
+    }
+]

@@ -61,7 +61,7 @@ const ShoppingCartList = () => {
     };
 
     return (
-        <section className=" container mx-auto px-6 py-16">
+        <section className=" container mx-auto lg:px-6 px-3 py-16">
             <h2 className="uppercase font-medium">Your Shopping Cart</h2>
             <div className="py-10 ">
                 <div className=" md:grid hidden  grid-cols-12 items-center justify-between gap-6 font-semibold uppercase pb-3 border-[#DD748F] border-b">
