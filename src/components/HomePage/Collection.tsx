@@ -15,7 +15,7 @@ const bodoniModa = Bodoni_Moda({
 
 const Collection = () => {
     return (
-        <section className="container mx-auto px-6 text-center py-16">
+        <section className="container mx-auto lg:px-6 px-3 text-center py-16">
             <div className="grid md:grid-cols-3 gap-6 ">
                 <div className="">
                     <div className="">

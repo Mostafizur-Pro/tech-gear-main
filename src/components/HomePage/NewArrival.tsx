@@ -54,7 +54,7 @@ const NewArrival: React.FC = () => {
         },
     ];
     return (
-        <section className="container mx-auto px-6 py-16">
+        <section className="container mx-auto lg:px-6 px-3 py-16">
             <div className="md:flex justify-between items-center">
                 <h2
                     className={`uppercase lg:text-3xl text-xl ${bodoniModa.className} py-6`}
