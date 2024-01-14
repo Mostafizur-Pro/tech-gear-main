@@ -1,3 +1,4 @@
+import CategoryBar from "@/components/CategoryBar/CategoryBar";
 import Collection from "@/components/HomePage/Collection";
 import HeroSection from "@/components/HomePage/HeroSection";
 import NewArrival from "@/components/HomePage/NewArrival";
@@ -14,6 +15,7 @@ const Home = () => {
             <Newsletter />
             <Testimonials />
             <Product />
+            <CategoryBar></CategoryBar>
         </div>
     );
 };
