@@ -510,9 +510,12 @@ export default function Navbar() {
                                                                 aria-hidden="true"
                                                             />
 
-                                                            <div className="relative bg-white">
-                                                                <div className="mx-auto max-w-7xl px-8">
-                                                                    <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                                                            <div
+                                                                className="relative bg-white z-10
+                                                            "
+                                                            >
+                                                                <div className="mx-auto max-w-7xl px-8 ">
+                                                                    <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16 bg-white">
                                                                         <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                                                             {category.featured.map(
                                                                                 (
