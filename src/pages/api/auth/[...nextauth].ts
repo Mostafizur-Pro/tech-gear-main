@@ -18,23 +18,25 @@ const authOptions = {
       name: "Credentials",
       credentials: {},
       async authorize(credentials: { email: string; password: string }) {
-        const {email, password} = credentials;
-        
-        const user = users.find(u => u.email === email);
+        const { email, password } = credentials;
 
-        if(!user) {
-          console.log("No user found")
+        //TODO: best case scenario should be adding a fetch request where we will get the user directly from the server
+        // After adding the backend remove all the conditions.
+
+        const user = users.find((u) => u.email === email);
+
+        if (!user) {
+          console.log("No user found");
           return;
         }
 
-        if(user.password !== password) {
-          console.log("Password didn't matched")
+        if (user.password !== password) {
+          console.log("Password didn't matched");
           return;
         }
 
-        console.log("user = ",user)
+        console.log("user = ", user);
         return user;
-
       },
     }),
   ],
