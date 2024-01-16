@@ -1,13 +1,16 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { AuthProvider } from "@/context/AuthProvider";
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
+      <AuthProvider>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </AuthProvider>
     </Html>
-  )
+  );
 }
