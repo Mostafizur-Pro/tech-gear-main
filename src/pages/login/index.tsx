@@ -14,10 +14,10 @@ const Login = () => {
 
   const [error, setError] = useState("");
 
-  // handling form data and sending it to backend
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setLoginLoading(true);
+
     const email = formData.email;
     const password = formData.password;
 
@@ -29,38 +29,17 @@ const Login = () => {
       });
 
       if (res?.error) {
-        setError("Invalid Credentials");
-        setLoginLoading(false)
+        setError("Invalid credentials");
+        setLoginLoading(false);
         return;
       }
-      
-      setLoginLoading(false)
-      router.replace("/")
+
+      setLoginLoading(false);
+      router.replace("/");
     } catch (error) {
-        console.error(error)
+      console.error(error);
     }
 
-
-
-    // fetch("https://techgear-server.vercel.app/api/v1/auth/login", {
-    //   method: "POST",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    //   body: JSON.stringify(userData),
-    // })
-    //   .then((res) => res.json())
-    //   .then((result) => {
-    //     setLoginLoading(false);
-    //     console.log("login", result);
-    //     if (result.success) {
-    //       router.push("/");
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     console.log(err.message);
-    //     setLoginLoading(false);
-    //   });
   };
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-300">

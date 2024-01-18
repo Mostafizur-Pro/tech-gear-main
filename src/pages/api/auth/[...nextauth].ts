@@ -1,17 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialProvider from "next-auth/providers/credentials";
 
-interface User {
-  id: string;
-  email: string;
-  password: string;
-}
-
-const users: User[] = [
-  { id: "12", email: "mdasik0@gmail.com", password: "helloWorld" },
-  { id: "02", email: "amazon@gmail.com", password: "00001111" },
-];
-
 const authOptions = {
   providers: [
     CredentialProvider({
@@ -20,28 +9,32 @@ const authOptions = {
       async authorize(credentials: { email: string; password: string }) {
         const { email, password } = credentials;
 
-        //TODO: best case scenario should be adding a fetch request where we will get the user directly from the server
-        // After adding the backend remove all the conditions.
+        try {
+          const response = await fetch("https://techgear-server.vercel.app/api/v1/auth/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email: email, password: password }),
+          });
 
-        const user = users.find((u) => u.email === email);
+          const data = await response.json();
 
-        if (!user) {
-          console.log("No user found");
-          return;
+          if (data.success) {
+            console.log(data)
+            return data;
+          } else {
+            throw new Error(data.message || "Authentication failed");
+          }
+        } catch (error) {
+          console.error("Authentication error:", error);
+          throw new Error("Authentication failed");
         }
-
-        if (user.password !== password) {
-          console.log("Password didn't matched");
-          return;
-        }
-
-        console.log("user = ", user);
-        return user;
       },
     }),
   ],
   session: {
-    jwt: true, // Use JWT for session storage
+    jwt: true,
   },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
