@@ -1,7 +1,7 @@
 import Image from "next/image";
-import productImage01 from "@/assets/products/102.jpg";
+import productImage01 from "@/assets/techProduct/t3.jpg";
 import productImage02 from "@/assets/products/115.jpg";
-import productImage03 from "@/assets/products/130.jpg";
+import productImage03 from "@/assets/techProduct/t1.jpg";
 import productImage04 from "@/assets/products/140.jpg";
 import productImage05 from "@/assets/products/141.jpg";
 import productImage06 from "@/assets/products/19.jpg";
@@ -81,7 +81,7 @@ const HeroSection = () => {
         <section className="border-b ">
             <div className="container mx-auto px-6 text-center py-16">
                 <div className="grid ">
-                    <div className="col-span-4 mt-16">
+                    <div className="col-span-4 md:mt-16 mt-6 xl:pb-6">
                         <h2
                             className={`xl:text-8xl lg:text-6xl md:text-5xl text-4xl uppercase font-semibold ${bodoniModa.className}`}
                         >
@@ -102,11 +102,11 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="">
-                <Marquee pauseOnHover={true}>
+                <Marquee>
                     {products.map((product) => (
                         <div className="ps-0.5 " key={product.id}>
                             <Image
-                                className="md:h-auto h-80 w-auto"
+                                className="lg:h-96 h-48 lg:w-80 w-44 object-cover"
                                 src={product.image}
                                 alt="Product Image"
                             ></Image>

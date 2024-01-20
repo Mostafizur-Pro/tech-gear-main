@@ -1,12 +1,12 @@
 import { useState } from "react";
-import productImage01 from "@/assets/newArrival/1.jpg";
-import productSecondImage01 from "@/assets/newArrival/1_2.jpg";
-import productImage02 from "@/assets/newArrival/2.jpg";
-import productSecondImage02 from "@/assets/newArrival/2_2.jpg";
-import productImage03 from "@/assets/newArrival/3.jpg";
-import productSecondImage03 from "@/assets/newArrival/3_2.jpg";
-import productImage04 from "@/assets/newArrival/4.jpg";
-import productSecondImage04 from "@/assets/newArrival/4_2.jpg";
+import productImage01 from "@/assets/techProduct/t1.jpg";
+import productSecondImage01 from "@/assets/techProduct/t1_2.webp";
+import productImage02 from "@/assets/techProduct/t2_2.jpg";
+import productSecondImage02 from "@/assets/techProduct/t2.jpg";
+import productImage03 from "@/assets/techProduct/t3.jpg";
+import productSecondImage03 from "@/assets/techProduct/t3_2.jpg";
+import productImage04 from "@/assets/techProduct/t4.jpg";
+import productSecondImage04 from "@/assets/techProduct/t4_2.jpg";
 import Image from "next/image";
 
 // Import Open Sans font
@@ -16,7 +16,7 @@ const bodoniModa = Bodoni_Moda({
     subsets: ["latin"],
     display: "swap",
 });
-const NewArrival: React.FC = () => {
+const TechProduct: React.FC = () => {
     const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
 
     const products = [
@@ -54,12 +54,12 @@ const NewArrival: React.FC = () => {
         },
     ];
     return (
-        <section className="container mx-auto lg:px-6 px-3 py-16">
+        <section className="container mx-auto lg:px-6 px-3 my-16">
             <div className="md:flex justify-between items-center">
                 <h2
                     className={`uppercase lg:text-3xl text-xl ${bodoniModa.className} py-6`}
                 >
-                    New Arrival
+                    Tech Products
                 </h2>
                 <div className="w-40 h-0.5 bg-black border"></div>
             </div>
@@ -99,4 +99,4 @@ const NewArrival: React.FC = () => {
     );
 };
 
-export default NewArrival;
+export default TechProduct;

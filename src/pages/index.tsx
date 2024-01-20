@@ -2,7 +2,8 @@ import Collection from "@/components/HomePage/Collection";
 import HeroSection from "@/components/HomePage/HeroSection";
 import NewArrival from "@/components/HomePage/NewArrival";
 import Newsletter from "@/components/HomePage/Newsletter";
-import Product from "@/components/Product/Product";
+import TechProduct from "@/components/HomePage/TechProduct";
+import Testimonials from "@/components/HomePage/Testimonial";
 
 const Home = () => {
     return (
@@ -10,8 +11,9 @@ const Home = () => {
             <HeroSection />
             <NewArrival />
             <Collection />
+            <TechProduct />
             <Newsletter />
-            <Product />
+            <Testimonials />
         </div>
     );
 };

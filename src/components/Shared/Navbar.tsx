@@ -1,4 +1,7 @@
+import logo from "@/assets/logo.png";
 import { Fragment, useState } from "react";
+import { LuSearch } from "react-icons/lu";
+import { IoPersonSharp } from "react-icons/io5";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -7,12 +10,14 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
+import { BsBagFill } from "react-icons/bs";
 
 const navigation = {
   categories: [
     {
       id: "women",
-      name: "Women",
+      name: "WOMEN",
       featured: [
         {
           name: "New Arrivals",
@@ -72,64 +77,80 @@ const navigation = {
     },
     {
       id: "men",
-      name: "Men",
+      name: "MEN",
       featured: [
         {
           name: "New Arrivals",
-          href: "#",
-          imageSrc: " ",
+          href: "/man/new-arrivals",
+        //   className: "w-22 ",
+          imageSrc: "https://www.aarong.com/media/wysiwyg/d-puja-men-mm-23092023_2.jpg",
           imageAlt:
             "Drawstring top with elastic loop closure and textured interior padding.",
         },
-        {
-          name: "Artwork Tees",
-          href: "#",
-          imageSrc: " ",
-          imageAlt:
-            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
-        },
+        // {
+        //     name: "Artwork Tees",
+        //     href: "#",
+        //     imageSrc: " ",
+        //     imageAlt:
+        //         "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+        // },
       ],
       sections: [
         {
           id: "clothing",
           name: "Clothing",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "Panjabi", href: "/man/panjabi" },
+            { name: "Panjabi Pajama Sets", href: "/man/panjabi-pajama" },
+            { name: "Pajama", href: "/man/pajama" },
+            { name: "Coaty", href: "/man/coaty" },
+            { name: "Short Kurta", href: "/man/short-kurta" },
+            { name: "Jackets", href: "/man/jackets" },
+            { name: "Shirts", href: "/man/shirts" },
+            { name: "Trousers", href: "/man/trousers" },
+          ],
+        },
+        {
+          id: "clothing",
+          name: "Clothing",
+          items: [
+            { name: "Fatua", href: "/man/fatua" },
+            { name: "Lungi", href: "/man/lungi" },
+            { name: "Shawls", href: "/man/shawls" },
+            { name: "Scarves & Mufflers", href: "/man/scarves-mufflers" },
+            { name: "T-Shirts", href: "/man/t-shirts" },
+            { name: "Polos", href: "/man/polos" },
+            { name: "Shoes", href: "/man/shoes" },
+            { name: "Tupi", href: "/man/tupi" },
           ],
         },
         {
           id: "accessories",
           name: "Accessories",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
+            { name: "Watches", href: "/man/watches" },
+            { name: "Wallets", href: "/man/wallets" },
+            { name: "Bags", href: "/man/bags" },
+            { name: "Sunglasses", href: "/man/sunglasses" },
+            { name: "Hats", href: "/man/hats" },
+            { name: "Belts", href: "/man/belts" },
           ],
         },
-        {
-          id: "brands",
-          name: "Brands",
-          items: [
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-          ],
-        },
+        // {
+        //   id: "brands",
+        //   name: "Brands",
+        //   items: [
+        //     { name: "Re-Arranged", href: "#" },
+        //     { name: "Counterfeit", href: "#" },
+        //     { name: "Full Nelson", href: "#" },
+        //     { name: "My Way", href: "#" },
+        //   ],
+        // },
       ],
     },
     {
       id: "page",
-      name: "Page",
+      name: "PAGE",
       featured: [
         {
           name: "New Arrivals",
@@ -207,7 +228,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto ">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -368,7 +389,8 @@ export default function Navbar() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      {/* Computer Menu */}
+      <header className="relative bg-white ">
         <div className="flex justify-between  h-10 items-center  bg-rose-300 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           <div>Discount 20%</div>
           <div>0182934357</div>
@@ -376,13 +398,13 @@ export default function Navbar() {
 
         <nav
           aria-label="Top"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+          className="container mx-auto lg:px-6 px-3 bg-white uppercase"
         >
-          <div className="border-b border-gray-200">
+          <div className="">
             <div className="flex h-16 items-center">
               <button
                 type="button"
-                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="relative rounded-md bg-white py-2 md:px-2 px-0 text-gray-400 lg:hidden"
                 onClick={() => setOpen(true)}
               >
                 <span className="absolute -inset-0.5" />
@@ -394,16 +416,12 @@ export default function Navbar() {
               <div className="ml-4 flex lg:ml-0">
                 <a href="#">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://pbs.twimg.com/media/FVs3VPLWIAATXow.jpg:large"
-                    alt="Logo"
-                  />
+                  <Image className="h-8 w-auto" src={logo} alt="Logo" />
                 </a>
               </div>
 
               {/* Flyout menus */}
-              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
+              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch ">
                 <div className="flex h-full flex-wrap space-x-8">
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
@@ -434,18 +452,18 @@ export default function Navbar() {
                             <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
                               {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                               <div
-                                className="absolute inset-0 top-1/2 bg-white shadow"
+                                className="absolute inset-0 top-1/2 bg-white shadow "
                                 aria-hidden="true"
                               />
 
-                              <div className="relative bg-white">
+                              <div className="relative bg-white z-[1]">
                                 <div className="mx-auto max-w-7xl px-8">
-                                  <div className="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
-                                    <div className="col-start-2 grid grid-cols-2 gap-x-8">
+                                  <div className=" grid grid-cols-2 gap-x-8 gap-y-10 py-16 ">
+                                    <div className="col-start-2 grid grid-cols-2 gap-x-8 ">
                                       {category.featured.map((item) => (
                                         <div
                                           key={item.name}
-                                          className="group relative text-base sm:text-sm"
+                                          className="group relative text-base sm:text-sm "
                                         >
                                           <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                                             <img
@@ -473,7 +491,7 @@ export default function Navbar() {
                                         </div>
                                       ))}
                                     </div>
-                                    <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                                    <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm ">
                                       {category.sections.map((section) => (
                                         <div key={section.name}>
                                           <p
@@ -526,82 +544,91 @@ export default function Navbar() {
                 </div>
               </Popover.Group>
 
-              <div className="ml-auto flex items-center">
-                {a ? (
-                  <img
-                    className="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                ) : (
-                  <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                    <Link
-                      href="/login"
-                      className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                    >
-                      Sign in
-                    </Link>
-                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  </div>
-                )}
-
-                <div className="hidden lg:ml-8 lg:flex">
-                  <a
-                    href="#"
-                    className="flex items-center text-gray-700 hover:text-gray-800"
-                  >
-                    <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
-                      alt=""
-                      className="block h-auto w-5 flex-shrink-0"
-                    />
-                    <span className="ml-3 block text-sm font-medium">CAD</span>
-                    <span className="sr-only">, change currency</span>
-                  </a>
-                </div>
-
+              <div className="ml-auto flex items-center gap-1">
                 {/* Search */}
-                <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <div>
-                      <div className="relative mt-2 rounded-md shadow-sm">
-                        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                          <span className="text-gray-500 sm:text-sm">$</span>
-                        </div>
-                        <input
-                          type="text"
-                          name="price"
-                          id="price"
-                          className="block outline-none w-[149px] rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-500 sm:text-sm sm:leading-6"
-                          placeholder="search"
-                        />
-                        <div className="absolute inset-y-0 right-0 flex items-center">
-                          <select
-                            id="currency"
-                            name="currency"
-                            className="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 outline-none sm:text-sm"
-                          >
-                            <option>Bangla</option>
-                            <option>English</option>
-                            <option>Hindi</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                <div className="flex lg:mr-4">
+                  {/* <a
+                                        href="#"
+                                        className="p-2 text-gray-400 hover:text-gray-500"
+                                    >
+                                        <div>
+                                            <div className="relative mt-2 rounded-md shadow-sm">
+                                                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                    <span className="text-gray-500 sm:text-sm">
+                                                        $
+                                                    </span>
+                                                </div>
+                                                <input
+                                                    type="text"
+                                                    name="price"
+                                                    id="price"
+                                                    className="block outline-none w-[149px] rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-500 sm:text-sm sm:leading-6"
+                                                    placeholder="search"
+                                                />
+                                                <div className="absolute inset-y-0 right-0 flex items-center">
+                                                    <select
+                                                        id="currency"
+                                                        name="currency"
+                                                        className="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 outline-none sm:text-sm"
+                                                    >
+                                                        <option>Bangla</option>
+                                                        <option>English</option>
+                                                        <option>Hindi</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> */}
+                  {/* Search */}
+                  <LuSearch className="h-7 w-7 text-gray-400 hover:text-gray-500" />
                 </div>
+                <div className="lg:me-3">
+                  {a ? (
+                    <Link href={"/my-account"}>
+                      <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />
+                    </Link>
+                  ) : (
+                    <Link href={"/login"}>
+                      <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />
+                    </Link>
+                  )}
+                </div>
+
+                {/* <div className="hidden lg:ml-8 lg:flex">
+                                    <a
+                                        href="#"
+                                        className="flex items-center text-gray-700 hover:text-gray-800"
+                                    >
+                                        <img
+                                            src="https://tailwindui.com/img/flags/flag-canada.svg"
+                                            alt=""
+                                            className="block h-auto w-5 flex-shrink-0"
+                                        />
+                                        <span className="ml-3 block text-sm font-medium">
+                                            CAD
+                                        </span>
+                                        <span className="sr-only">
+                                            , change currency
+                                        </span>
+                                    </a>
+                                </div> */}
 
                 {/* Cart */}
-                <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
-                    <ShoppingBagIcon
+                <div className="ml-4 flow-root me-2">
+                  <a
+                    href="#"
+                    className="group -m-2 flex items-center relative "
+                  >
+                    <BsBagFill
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
-                    </span>
-                    <span className="sr-only">items in cart, view bag</span>
+                    <div className="absolute -bottom-1 right-3.5 border flex justify-center items-center px-1.5 rounded-full bg-white">
+                      <span className="text-xs font-medium  text-gray-700 group-hover:text-gray-800">
+                        0
+                      </span>
+                      <span className="sr-only">items in cart, view bag</span>
+                    </div>
                   </a>
                 </div>
               </div>
