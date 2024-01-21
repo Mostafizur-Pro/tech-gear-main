@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { BsBagFill } from "react-icons/bs";
+import { useSession } from "next-auth/react";
 
 const navigation = {
   categories: [
@@ -224,7 +225,12 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
-  const a = true;
+
+  const {data:session} = useSession();
+
+  console.log(session)
+
+  
   const [open, setOpen] = useState(false);
 
   return (
@@ -583,7 +589,7 @@ export default function Navbar() {
                   <LuSearch className="h-7 w-7 text-gray-400 hover:text-gray-500" />
                 </div>
                 <div className="lg:me-3">
-                  {a ? (
+                  {session ? (
                     <Link href={"/my-account"}>
                       <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />
                     </Link>

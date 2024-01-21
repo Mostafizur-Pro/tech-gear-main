@@ -21,7 +21,6 @@ const authOptions = {
           const data = await response.json();
 
           if (data.success) {
-            console.log(data)
             return data;
           } else {
             throw new Error(data.message || "Authentication failed");
