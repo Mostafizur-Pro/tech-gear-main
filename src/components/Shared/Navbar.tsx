@@ -227,9 +227,6 @@ function classNames(...classes: string[]) {
 export default function Navbar() {
 
   const {data:session} = useSession();
-
-  console.log(session)
-
   
   const [open, setOpen] = useState(false);
 

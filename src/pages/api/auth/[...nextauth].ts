@@ -1,6 +1,19 @@
 import NextAuth from "next-auth";
 import CredentialProvider from "next-auth/providers/credentials";
 
+interface UserData {
+  email: string;
+  name?: string;
+  _id: string;
+  role: string;
+  phone?: string;
+  image?: string;
+  address?: string;
+  createdAt: string;
+  updatedAt: string;
+  __v: string;
+}
+
 const authOptions = {
   providers: [
     CredentialProvider({
@@ -21,7 +34,14 @@ const authOptions = {
           const data = await response.json();
 
           if (data.success) {
-            return data;
+
+            const response = await fetch("https://techgear-server.vercel.app/api/v1/users/")
+            const allUsers = await response.json();
+            const user = (allUsers.data as UserData[]).find((u) => u.email === email);
+            return user;
+            // console.log({...user, accessToken : data.data.accessToken});
+            // return {...user, accessToken : data.data.accessToken};
+
           } else {
             throw new Error(data.message || "Authentication failed");
           }
