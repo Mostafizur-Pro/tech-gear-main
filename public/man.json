@@ -1,0 +1,426 @@
+[
+    {
+        "id": 1,
+        "SKU": "SK0631661126",
+        "title": "Black T-Shirt",
+        "price": {
+            "newPrice": "$12.99",
+            "oldPrice": "$18.69"
+        },
+        "stockStatus": "In Stock",
+        "content": "I love shopping from your site! The products are of great quality, and the customer service is exceptional.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": {
+            "xs": "XS",
+            "s": "S",
+            "m": "M",
+            "l": "L",
+            "xl": "XL",
+            "xll": "XXL"
+        },
+        "color": {
+            "black": "Black",
+            "blue": "Blue",
+            "white": "White",
+            "yellow": "Yellow",
+            "red": "Red",
+            "green": "Green",
+            "pink": "Pink",
+            "purple": "Purple",
+            "check": "Check"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "Cy Ganderton",
+                "quality": "Quality Control Specialist",
+                "color": "Blue"
+            },
+            {
+                "id": "02",
+                "name": "Cy Ganderton",
+                "quality": "Quality Control Specialist",
+                "color": "Purple"
+            },
+            {
+                "id": "03",
+                "name": "Cy Ganderton",
+                "quality": "Quality Control Specialist",
+                "color": "Red"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "men",
+            "tag2": "t-shirt",
+            "tag3": "black",
+            "tag4": "slim",
+            "tag5": ""
+        }
+    },
+    {
+        "id": 2,
+        "SKU": "SK0723457890",
+        "title": "Denim Jeans",
+        "price": {
+            "newPrice": "$34.99",
+            "oldPrice": "$45.99"
+        },
+        "stockStatus": "In Stock",
+        "content": "These stylish denim jeans are perfect for any occasion. Comfortable and durable, they are a must-have in your wardrobe.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": {
+            "xs": "26",
+            "s": "28",
+            "m": "30",
+            "l": "32",
+            "xl": "34",
+            "xll": "36"
+        },
+        "color": {
+            "blue": "Blue",
+            "black": "Black",
+            "gray": "Gray",
+            "brown": "Brown",
+            "white": "White"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "Emma Thompson",
+                "quality": "Fashion Stylist",
+                "color": "Blue"
+            },
+            {
+                "id": "02",
+                "name": "Emma Thompson",
+                "quality": "Fashion Stylist",
+                "color": "Black"
+            },
+            {
+                "id": "03",
+                "name": "Emma Thompson",
+                "quality": "Fashion Stylist",
+                "color": "Gray"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "women",
+            "tag2": "jeans",
+            "tag3": "blue",
+            "tag4": "casual",
+            "tag5": ""
+        }
+    },
+    {
+        "id": 3,
+        "SKU": "SK0987654321",
+        "title": "Running Shoes",
+        "price": {
+            "newPrice": "$59.99",
+            "oldPrice": "$75.00"
+        },
+        "stockStatus": "In Stock",
+        "content": "Stay active with these comfortable and stylish running shoes. Designed for performance and durability.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": {
+            "us6": "US 6",
+            "us7": "US 7",
+            "us8": "US 8",
+            "us9": "US 9",
+            "us10": "US 10",
+            "us11": "US 11"
+        },
+        "color": {
+            "black": "Black",
+            "white": "White",
+            "blue": "Blue",
+            "gray": "Gray",
+            "red": "Red"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "Alex Johnson",
+                "quality": "Athletic Trainer",
+                "color": "Black"
+            },
+            {
+                "id": "02",
+                "name": "Alex Johnson",
+                "quality": "Athletic Trainer",
+                "color": "White"
+            },
+            {
+                "id": "03",
+                "name": "Alex Johnson",
+                "quality": "Athletic Trainer",
+                "color": "Blue"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "men",
+            "tag2": "shoes",
+            "tag3": "running",
+            "tag4": "athletic",
+            "tag5": ""
+        }
+    },
+    {
+        "id": 4,
+        "SKU": "SK0123456789",
+        "title": "Leather Jacket",
+        "price": {
+            "newPrice": "$89.99",
+            "oldPrice": "$110.00"
+        },
+        "stockStatus": "In Stock",
+        "content": "Add a touch of style with this classic leather jacket. Perfect for any season and versatile for various occasions.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": {
+            "xs": "XS",
+            "s": "S",
+            "m": "M",
+            "l": "L",
+            "xl": "XL",
+            "xll": "XXL"
+        },
+        "color": {
+            "black": "Black",
+            "brown": "Brown",
+            "gray": "Gray",
+            "red": "Red",
+            "blue": "Blue"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "Sophia Martinez",
+                "quality": "Fashion Designer",
+                "color": "Black"
+            },
+            {
+                "id": "02",
+                "name": "Sophia Martinez",
+                "quality": "Fashion Designer",
+                "color": "Brown"
+            },
+            {
+                "id": "03",
+                "name": "Sophia Martinez",
+                "quality": "Fashion Designer",
+                "color": "Gray"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "women",
+            "tag2": "jacket",
+            "tag3": "leather",
+            "tag4": "classic",
+            "tag5": ""
+        }
+    },
+    {
+        "id": 5,
+        "SKU": "SK0456789123",
+        "title": "Smartphone",
+        "price": {
+            "newPrice": "$599.99",
+            "oldPrice": "$699.00"
+        },
+        "stockStatus": "In Stock",
+        "content": "Stay connected with the latest smartphone technology. Sleek design, powerful performance, and top-notch features.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": null,
+        "color": {
+            "black": "Black",
+            "silver": "Silver",
+            "blue": "Blue",
+            "rose_gold": "Rose Gold",
+            "white": "White"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "John Doe",
+                "quality": "Tech Expert",
+                "color": "Black"
+            },
+            {
+                "id": "02",
+                "name": "John Doe",
+                "quality": "Tech Expert",
+                "color": "Silver"
+            },
+            {
+                "id": "03",
+                "name": "John Doe",
+                "quality": "Tech Expert",
+                "color": "Blue"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "electronics",
+            "tag2": "smartphone",
+            "tag3": "mobile",
+            "tag4": "technology",
+            "tag5": ""
+        }
+    },
+    {
+        "id": 6,
+        "SKU": "SK0987654321",
+        "title": "Running Shoes",
+        "price": {
+            "newPrice": "$49.99",
+            "oldPrice": "$65.00"
+        },
+        "stockStatus": "In Stock",
+        "content": "Enhance your running experience with these lightweight and comfortable running shoes. Perfect for fitness enthusiasts.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": {
+            "us_7": "US 7",
+            "us_8": "US 8",
+            "us_9": "US 9",
+            "us_10": "US 10",
+            "us_11": "US 11",
+            "us_12": "US 12"
+        },
+        "color": {
+            "black": "Black",
+            "blue": "Blue",
+            "gray": "Gray",
+            "green": "Green",
+            "red": "Red"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "Emma Johnson",
+                "quality": "Sports Expert",
+                "color": "Black"
+            },
+            {
+                "id": "02",
+                "name": "Emma Johnson",
+                "quality": "Sports Expert",
+                "color": "Blue"
+            },
+            {
+                "id": "03",
+                "name": "Emma Johnson",
+                "quality": "Sports Expert",
+                "color": "Gray"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "sports",
+            "tag2": "shoes",
+            "tag3": "running",
+            "tag4": "fitness",
+            "tag5": ""
+        }
+    },
+    {
+        "id": 7,
+        "SKU": "SK1122334455",
+        "title": "Coffee Maker",
+        "price": {
+            "newPrice": "$79.99",
+            "oldPrice": "$99.99"
+        },
+        "stockStatus": "In Stock",
+        "content": "Start your day right with the perfect cup of coffee. This coffee maker offers convenience and great taste every morning.",
+        "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "size": null,
+        "color": {
+            "black": "Black",
+            "silver": "Silver",
+            "red": "Red",
+            "white": "White",
+            "blue": "Blue"
+        },
+        "information": [
+            {
+                "id": "01",
+                "name": "Alex Smith",
+                "quality": "Home Appliances Expert",
+                "color": "Black"
+            },
+            {
+                "id": "02",
+                "name": "Alex Smith",
+                "quality": "Home Appliances Expert",
+                "color": "Silver"
+            },
+            {
+                "id": "03",
+                "name": "Alex Smith",
+                "quality": "Home Appliances Expert",
+                "color": "Red"
+            }
+        ],
+        "image": {
+            "img1": "URL_TO_IMAGE1",
+            "img2": "URL_TO_IMAGE2",
+            "img3": "URL_TO_IMAGE3",
+            "img4": "URL_TO_IMAGE4",
+            "img5": "URL_TO_IMAGE5"
+        },
+        "tags": {
+            "tag1": "appliances",
+            "tag2": "coffee",
+            "tag3": "maker",
+            "tag4": "kitchen",
+            "tag5": ""
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+]
