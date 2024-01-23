@@ -14,6 +14,7 @@ const MyAccount = () => {
                     <li className='px-[15px] py-[10px] font-medium text-gray-500 text-[16px]'><a href="#">Returns</a></li>
                     <li className='px-[15px] py-[10px] font-medium text-gray-500 text-[16px]'><a href="#">Newsletter</a></li>
                     <li className='px-[15px] py-[10px] font-medium text-gray-500 text-[16px]'><a href="/dashboard/add-blogs">Add Blogs</a></li>
+                    <li className='px-[15px] py-[10px] font-medium text-gray-500 text-[16px]'><a href="/dashboard/add-products">Add Product</a></li>
                 </ul>
             </div>
             <div className="col-span-3 bg-white m-3">
