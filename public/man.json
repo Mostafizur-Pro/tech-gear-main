@@ -2,6 +2,7 @@
     {
         "id": 1,
         "SKU": "SK0631661126",
+        
         "title": "Black T-Shirt",
         "price": {
             "newPrice": "$12.99",
@@ -29,26 +30,7 @@
             "purple": "Purple",
             "check": "Check"
         },
-        "information": [
-            {
-                "id": "01",
-                "name": "Cy Ganderton",
-                "quality": "Quality Control Specialist",
-                "color": "Blue"
-            },
-            {
-                "id": "02",
-                "name": "Cy Ganderton",
-                "quality": "Quality Control Specialist",
-                "color": "Purple"
-            },
-            {
-                "id": "03",
-                "name": "Cy Ganderton",
-                "quality": "Quality Control Specialist",
-                "color": "Red"
-            }
-        ],
+       
         "image": {
             "img1": "URL_TO_IMAGE1",
             "img2": "URL_TO_IMAGE2",
