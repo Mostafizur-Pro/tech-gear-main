@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.active-Navlink {
+    @apply bg-rose-500 text-white font-medium text-[18px] 
+}
+.normal-Navlink {
+    @apply font-medium text-gray-500 text-[16px] hover:bg-gray-200 duration-300
+}
