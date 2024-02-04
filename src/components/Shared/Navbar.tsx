@@ -592,7 +592,7 @@ export default function Navbar() {
                       <Link
                         data-tip={`${session?.user?.name}`}
                         className="tooltip tooltip-top hover:tooltip-open lowercase"
-                        href={"/dashboard"}
+                        href={"/dashboard/account"}
                       >
                         <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />
                       </Link>
