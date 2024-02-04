@@ -5,7 +5,7 @@ import React from 'react';
 const index = () => {
     return (
         <>
-           <DashboardBanner />
+           <DashboardBanner link="Add Blog" />
            <AddBlogsSection /> 
         </>
     );

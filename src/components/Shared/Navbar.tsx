@@ -1,6 +1,7 @@
 import logo from "@/assets/logo.png";
 import { Fragment, useState } from "react";
 import { LuSearch } from "react-icons/lu";
+import { LuLogOut } from "react-icons/lu";
 import { IoPersonSharp } from "react-icons/io5";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import {
@@ -12,6 +13,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { BsBagFill } from "react-icons/bs";
+import { signOut, useSession } from "next-auth/react";
 
 const navigation = {
   categories: [
@@ -82,8 +84,9 @@ const navigation = {
         {
           name: "New Arrivals",
           href: "/man/new-arrivals",
-        //   className: "w-22 ",
-          imageSrc: "https://www.aarong.com/media/wysiwyg/d-puja-men-mm-23092023_2.jpg",
+          //   className: "w-22 ",
+          imageSrc:
+            "https://www.aarong.com/media/wysiwyg/d-puja-men-mm-23092023_2.jpg",
           imageAlt:
             "Drawstring top with elastic loop closure and textured interior padding.",
         },
@@ -224,7 +227,8 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
-  const a = true;
+  const { data: session } = useSession();
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -583,10 +587,24 @@ export default function Navbar() {
                   <LuSearch className="h-7 w-7 text-gray-400 hover:text-gray-500" />
                 </div>
                 <div className="lg:me-3">
-                  {a ? (
-                    <Link href={"/my-account"}>
-                      <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />
-                    </Link>
+                  {session ? (
+                    <div className="flex gap-4">
+                      <Link
+                        data-tip={`${session?.user?.name}`}
+                        className="tooltip tooltip-top hover:tooltip-open lowercase"
+                        href={"/dashboard/account"}
+                      >
+                        <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />
+                      </Link>
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          signOut();
+                        }}
+                      >
+                        <LuLogOut className="h-6 w-6 text-gray-400 hover:text-gray-500 cursor-pointer" />
+                      </button>
+                    </div>
                   ) : (
                     <Link href={"/login"}>
                       <IoPersonSharp className="h-6 w-6 text-gray-400 hover:text-gray-500" />

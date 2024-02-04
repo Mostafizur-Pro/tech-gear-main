@@ -1,6 +1,6 @@
 import React from "react";
 import BlogForm from "./BlogForm";
-import DashboardSidebar from "@/components/dashboard/sidebar";
+import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
 
 const AddBlogsSection = () => {
   return (

@@ -2,7 +2,7 @@ import AddBlogsSection from "@/components/dashboard/Add-Blogs/AddBlogsSection";
 
 import React from "react";
 import WishlistBanner from "../../../components/dashboard/WishList/wishlistBanner";
-import DashboardSidebar from "../../../components/dashboard/sidebar";
+import DashboardSidebar from "../../../components/dashboard/DashboardSidebar";
 import DashboardWishlist from "../../../components/dashboard/WishList/wishlist";
 
 const index = () => {
